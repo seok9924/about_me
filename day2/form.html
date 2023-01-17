@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <form id="my_form" method="get">
-        <!-- <form id="my_form" method="post"> -->
-          <label for="name">이름 </label>
-          <input type="text" 
-                 id="name" name="name"
-                 autocomplete="off" spellcheck=true>
-          <br><br>
-          <label for="sex">남 </label>
-          <input type="radio" 
-                 id="male" name="sex"
-                 autocomplete="off">
-                 <label for="sex">여 </label>
-        <input type="radio" id="female" name="sex" value="female"> 
-                 <br>
-                <br>
-                 <label for="avail_language">좋아하는 음식</label><br>
-                 <input type="checkbox" id="pizza" name="avail_language" value="pizza" checked> 
-               피자<br>
-                 <input type="checkbox" id="chicken" name="avail_language" value="chicken">
-               치킨<br>
-                 <input type="checkbox" id="hamburger" name="avail_language" value="hamburger">
-               햄버거<br>
-               <br>
+  <form id="my_form" method="get">
+    <!-- <form id="my_form" method="post"> -->
+    <label for="name">이름 </label>
+    <input type="text" id="name" name="name" autocomplete="off" spellcheck=true>
+    <br><br>
+    <label for="sex">남 </label>
+    <input type="radio" id="male" name="sex" autocomplete="off">
+    <label for="sex">여 </label>
+    <input type="radio" id="female" name="sex" value="female">
+    <br>
+    <br>
+    <label for="avail_language">좋아하는 음식</label><br>
+    <input type="checkbox" id="pizza" name="avail_language" value="pizza" checked>
+    피자<br>
+    <input type="checkbox" id="chicken" name="avail_language" value="chicken">
+    치킨<br>
+    <input type="checkbox" id="hamburger" name="avail_language" value="hamburger">
+    햄버거<br>
+    <br>
+    비밀번호 <input type="password" id="pw" name="pw" size="20" >
+    <br>
 
 
-               전화번호 <input type="tel" id = "tel" name="phone" size="20" placeholder='010-1234-5678' style="width: 100px; height: 40px;" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
-               이메일 <input type="email" id = "email" name="email" size="20" placeholder='abc@naver.com' style="width: 100px; height: 40px;" pattern="[a-z]@[a-z].[a-z]">
-<br>
-<button>제출</button>
-    
+    전화번호 <input type="tel" id="tel" name="phone" size="20" placeholder='010-1234-5678'
+      style="width: 100px; height: 40px;" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+      <br>
+    email  <input type="email" id="email" name="email" size="20" placeholder='abc@naver.com'
+      style="width: 100px; height: 40px;" pattern="[a-z]@[a-z].[a-z]">
+    <br>
+    <button type="submit">제출</button>
+
 </body>
+
 </html>
