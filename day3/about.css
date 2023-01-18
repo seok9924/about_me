@@ -15,14 +15,26 @@
 }
 header{
     background-color: antiquewhite;
+    position: fixed;
+    text-align: center;
+    right:0px;
+    left:0px;
+    height: 20px;
 
 }
 footer{
     background-color: aqua;
+    position: fixed;
+    bottom: 0px;
+    right:0px;
+    left:0px;
+    text-align: center;
+    height: 20px;
 }
 
 #about_me{
     background-color: rgb(87, 106, 131);
     border: 0.5px darkseagreen;
-
+    float: inline-start;
+   
 }
