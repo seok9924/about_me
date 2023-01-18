@@ -1,10 +1,11 @@
 .sil{
     font-size: 15px;
+    border: 0.5px darkseagreen;
 }
 
 
 #lesson_reason{
-    background-color: blue;
+    background-color: yellow;
 }
 #want_div{
     background-color: chocolate;
@@ -21,7 +22,7 @@ footer{
 }
 
 #about_me{
-    background-color: ghostwhite;
+    background-color: rgb(87, 106, 131);
     border: 0.5px darkseagreen;
 
 }
