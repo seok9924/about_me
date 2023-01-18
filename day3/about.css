@@ -1,0 +1,27 @@
+.sil{
+    font-size: 15px;
+}
+
+
+#lesson_reason{
+    background-color: blue;
+}
+#want_div{
+    background-color: chocolate;
+}
+#changed_div{
+    background-color: darkgray;
+}
+header{
+    background-color: antiquewhite;
+
+}
+footer{
+    background-color: aqua;
+}
+
+#about_me{
+    background-color: ghostwhite;
+    border: 0.5px darkseagreen;
+
+}
