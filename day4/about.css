@@ -1,29 +1,47 @@
 .sil{
     font-size: 15px;
     border: 0.5px darkseagreen;
-    margin: 20px 20px 20px 20px;
     width: 350px;
 	height: 500px;
+    margin: 10px 10px 10px 10px;
+
+    
+
+}
+#container{
+    background-color: rgb(42, 196, 119);
+    border: 0.5px darkseagreen;
+    float: left;
+    width: max-content;
+	height: max-content;
+    
+}
+#about_me{
+    background-color: rgb(87, 106, 131);
+    border: 0.5px darkseagreen;
     float: left;
     
-    
+
 
 }
 
 
 #lesson_reason{
     background-color: yellow;
-    margin: 20px 20px 20px 20px;
-   
+    float: left;
 
+    
 }
 #want_div{
     background-color: chocolate;
-    margin: 20px 20px 20px 20px;
+    float: right;
+
 }
 #changed_div{
     background-color: rgb(211, 56, 56);
-    margin: 20px 20px 20px 20px;
+    float: right;
+
+
 
 
 
@@ -47,21 +65,15 @@ footer{
     position: fixed;
 }
 
-#about_me{
-    background-color: rgb(87, 106, 131);
-    border: 0.5px darkseagreen;
-    float: left;
 
-    
-
-   
-}
 #side_bar {
     background-color: rgb(87, 106, 131);
-    border: 0.5px darkseagreen;
+    border: 0.5px rgb(10, 15, 10);
     float: right;
     margin: 20px 20px 20px 20px;
     width: 250px;
 	height: 500px;
+    position: sticky;
+    top:4px;
     
 }
