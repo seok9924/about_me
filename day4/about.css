@@ -1,0 +1,67 @@
+.sil{
+    font-size: 15px;
+    border: 0.5px darkseagreen;
+    margin: 20px 20px 20px 20px;
+    width: 350px;
+	height: 500px;
+    float: left;
+    
+    
+
+}
+
+
+#lesson_reason{
+    background-color: yellow;
+    margin: 20px 20px 20px 20px;
+   
+
+}
+#want_div{
+    background-color: chocolate;
+    margin: 20px 20px 20px 20px;
+}
+#changed_div{
+    background-color: rgb(211, 56, 56);
+    margin: 20px 20px 20px 20px;
+
+
+
+
+}
+header{
+    background-color: antiquewhite;
+    margin: 20px 20px 20px 20px;
+    /* right:0px;
+    left:0px;
+    height: 20px; */
+
+}
+footer{
+    background-color: aqua;
+    bottom: 0px;
+    right:0px;
+    left:0px;
+    text-align: center;
+    height: 20px;
+    position: fixed;
+}
+
+#about_me{
+    background-color: rgb(87, 106, 131);
+    border: 0.5px darkseagreen;
+    float: left;
+
+    
+
+   
+}
+#side_bar {
+    background-color: rgb(87, 106, 131);
+    border: 0.5px darkseagreen;
+    float: right;
+    margin: 20px 20px 20px 20px;
+    width: 250px;
+	height: 500px;
+    
+}
