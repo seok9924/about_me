@@ -7,7 +7,7 @@
 header{
     background-color: rgba(255,127,80,0.5);
     margin: 0.5% ;
-    width: 97vw;
+    width: 96.8vw;
     height: 30vh;
     text-align: center;
     position: fixed;
@@ -28,6 +28,32 @@ header ul{
 header ul li{
     font-size: 1vw;
 }
+footer{
+    background-color: aqua;
+    bottom: 0px;
+    right:0px;
+    left:0px;
+    text-align: center;
+    height: 20px;
+    position: fixed;
+    bottom: 0.2vh;
+    padding: 0.2%;
+}
+
+.image{
+  width: 35vw;
+  height: 40vh;
+}
+.image2{
+    
+   width: 15vw;
+   height: 30vh;
+   padding-top: 1vh;
+   padding-left: 0.5vw;
+
+}
+
+
 
 
 @media (width <600px) {
@@ -40,7 +66,7 @@ header ul li{
         float: left;
         display: grid;
         grid-template-columns: repeat(1,1fr) ;
-        width: 99%;
+        width: 97vw;
         float: left;
         padding-top: 30vh;
         background-color: antiquewhite;
@@ -105,7 +131,7 @@ header ul li{
         float: left;
         display: grid;
         grid-template-columns: repeat(12,1fr) ;
-        width: 99%;
+        width: 97vw;
         float: left;
         padding-top: 30vh;
 
@@ -156,67 +182,3 @@ header ul li{
 }
 
 
-footer{
-    background-color: aqua;
-    bottom: 0px;
-    right:0px;
-    left:0px;
-    text-align: center;
-    height: 20px;
-    position: fixed;
-}
-
-.image{
-  width: 35vw;
-  height: 40vh;
-}
-.image2{
-   width: 10vw;
-   height: 20vh;
-}
-
-.slider{
-    width: 640px;
-    height: 480px;
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden; /* 현재 슬라이드 오른쪽에 위치한 나머지 슬라이드 들이 보이지 않도록 가림 */
-}
-.slider input[type=radio]{
-    display: none;
-}
-ul.imgs{
-    padding: 0;
-    margin: 0;
-    list-style: none;    
-}
-ul.imgs li{
-    position: absolute;
-    left: 640px;
-    transition-delay: 1s; /* 새 슬라이드가 이동해 오는 동안 이전 슬라이드 이미지가 배경이 보이도록 지연 */
-
-    padding: 0;
-    margin: 0;
-}
-.bullets{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
-    z-index: 2;
-}
-.bullets label{
-    display: inline-block;
-    border-radius: 50%;
-    background-color: rgba(0,0,0,0.55);
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-/* 현재 선택된 불릿 배경 흰색으로 구분 표시 */
-.slider input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1){
-    background-color: #fff;
-}
-.slider input[type=radio]:nth-child(2):checked~.bullets>label:nth-child(2){
-    background-color: #fff;
-}
