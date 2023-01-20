@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            display: flex;
+            /* 열을 기준 축으로 설정 - default 값은 row(행) */
+            flex-direction: column;
+            border: 3px solid purple;
+            background-color: antiquewhite;
+            margin: 20px 20px 20px 20px;
+            display: flex;
+            height: 10vh;
+            text-align: center;
+
+
+            /* height: 100vh; */
+        }
+        footer{
+            top:90vh;
+            position: fixed;
+            /* 열을 기준 축으로 설정 - default 값은 row(행) */
+            flex-direction: column;
+            border: 3px solid purple;
+            background-color: antiquewhite;
+            margin: 20px 20px 20px 20px;
+            display: flex;
+            height: 5vh;
+            text-align: center;
+            width: 97vw;
+        }
+        #content{
+            /* 열을 기준 축으로 설정 - default 값은 row(행) */
+            float: left;
+
+            border: 3px solid purple;
+            background-color: antiquewhite;
+            margin: 20px 20px 20px 20px;
+            display: flex;
+            height: 70vh;
+            width: 40vw;
+        }
+        #side{
+            float: right;
+            /* 열을 기준 축으로 설정 - default 값은 row(행) */
+            border: 3px solid purple;
+            background-color: antiquewhite;
+            margin: 20px 20px 20px 20px;
+            display: flex;
+            height: 70vh;
+            width: 30vw;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        heder
+    </header>
+    <div id="content">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis illo blanditiis natus, exercitationem,
+        voluptatum vitae quasi placeat quas distinctio quos, incidunt sapiente totam alias autem quaerat tempore nulla.
+        Accusantium, vero.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit doloremque consequatur in magni modi minus natus dolorem hic, omnis quaerat nam, voluptas qui veritatis inventore repellendus? Tempore accusamus cumque debitis?
+    </div>
+    <div id='side'>
+        side
+    </div>
+    <footer id="footer">
+footer
+    </footer>
+
+</body>
+
+</html>

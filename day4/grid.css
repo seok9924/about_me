@@ -1,0 +1,26 @@
+/* flex, grid는 레이아웃을 화면의 크기에 따라 유동적으로 배치하기 위한 레이아웃 속성입니다 
+flex는 하나의 축을 기준으로 화면이 움직이고,
+grid(격자, 바둑판)는 가로, 세로 두 축을 기준으로 화면을 움직입니다. 
+화면 전체를 100으로 봤을 때 그 중 얼마를 등분해서 사용할지 
+부모 div 안에 자식 div(컨테이너)들을 넣어서 사용합니다 
+*/
+*{
+    margin: 0;
+}
+
+.item{
+  border: 1px dashed purple;
+  width: 100px;
+  height: calc(100vh/8);
+}
+
+.container{
+  display: flex;
+  /* 열을 기준 축으로 설정 - default 값은 row(행) */
+  flex-direction: column;
+  border: 3px solid purple;
+  background-color: antiquewhite;
+  height: 100vh; 
+  width: 100vw;
+  /* height: 100vh; */
+}
