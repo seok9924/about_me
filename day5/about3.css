@@ -1,0 +1,171 @@
+.sil{
+    border: 0.5px darkseagreen;
+    margin: 0.5% ;
+    
+    
+
+    
+
+}
+header{
+    background-color: rgba(255,127,80,0.5);
+    margin: 0.5% ;
+    width: 99%;
+    height: 25%;
+    text-align: center;
+    position: fixed;
+    backdrop-filter: blur(2px);
+
+}
+
+#ul1{
+    list-style: none;
+
+}
+#container{
+    
+    margin: 0.5% ;
+    float: left;
+    display: grid;
+    grid-template-rows: repeat(10,1fr) ;
+    grid-template-columns: repeat(12,1fr) ;
+    width: 99%;
+    float: left;
+    padding-top: 15%;
+    background-color: antiquewhite;
+}
+
+#about_me{
+    
+    grid-row: 1/6;
+    grid-column: 1/6;
+    background-color: rgba(97, 179, 30, 0.5);
+    min-width: 5fr;
+
+
+    
+
+}
+#lesson_reason{
+    grid-row: 1/6;
+    grid-column: 6/11;
+    background-color: rgba(161, 29, 73, 0.5);
+
+
+}
+#want_div{
+    grid-row: 6/11;
+    grid-column: 1/6;
+    background-color: rgba(33, 23, 173, 0.5);
+
+
+
+
+}
+#changed_div{
+    grid-row: 6/11;
+    grid-column: 6/11;
+    background-color: rgba(173, 190, 19, 0.5);
+
+
+
+}
+
+#side_bar {
+    border: 0.5px red;
+    background-color: rgb(87, 106, 131);
+    grid-row: 1/10;
+    grid-column:11/13;
+}
+
+
+
+footer{
+    background-color: aqua;
+    bottom: 0px;
+    right:0px;
+    left:0px;
+    text-align: center;
+    height: 20px;
+    position: fixed;
+}
+
+.image{
+  width: 200px;
+  height: 200px;
+}
+.image2{
+    min-width: 3fr;
+    max-width: 3fr;
+    min-height: 3fr;
+    max-height: 3fr;
+}
+
+@media (min-width <600px) {
+    #container { grid-template-columns: repeat(1, 1fr); 
+    }
+    #container{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        
+
+    }
+  }
+@media (min-width>600px) {
+    #container{
+    
+        margin: 0.5% ;
+        float: left;
+        display: grid;
+        grid-template-rows: repeat(10,1fr) ;
+        grid-template-columns: repeat(12,1fr) ;
+        width: 99%;
+        float: left;
+        padding-top: 15%;
+        background-color: antiquewhite;
+    }
+    
+    #about_me{
+        
+        grid-row: 1/6;
+        grid-column: 1/6;
+        background-color: rgba(97, 179, 30, 0.5);
+        min-width: 5fr;
+    
+    
+        
+    
+    }
+    #lesson_reason{
+        grid-row: 1/6;
+        grid-column: 6/11;
+        background-color: rgba(161, 29, 73, 0.5);
+    
+    
+    }
+    #want_div{
+        grid-row: 6/11;
+        grid-column: 1/6;
+        background-color: rgba(33, 23, 173, 0.5);
+    
+    
+    
+    
+    }
+    #changed_div{
+        grid-row: 6/11;
+        grid-column: 6/11;
+        background-color: rgba(173, 190, 19, 0.5);
+    
+    
+    
+    }
+    
+    #side_bar {
+        border: 0.5px red;
+        background-color: rgb(87, 106, 131);
+        grid-row: 1/10;
+        grid-column:11/13;
+    }
+    
+
+}
