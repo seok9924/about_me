@@ -59,6 +59,6 @@ st.write(
 st.markdown(html,unsafe_allow_html=True)
 
 
-HtmlFile = open(r"C:\Users\choi\Documents\GitHub\about_me\day5\index.html", 'r', encoding='utf-8')
+HtmlFile = open("./day5/index.html", 'r', encoding='utf-8')
 source_code = HtmlFile.read() 
 st.markdown(source_code,unsafe_allow_html=True)
