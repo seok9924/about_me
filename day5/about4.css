@@ -12,6 +12,7 @@ header{
     text-align: center;
     position: fixed;
     backdrop-filter: blur(2px);
+    padding: 1vh;
     
 
 
@@ -20,7 +21,7 @@ header h1{
     font-size: 4vh;
 }
 header h2{
-    font-size: 3vh;
+    font-size: 2vh;
 }
 header ul{
     list-style: none;
@@ -52,13 +53,30 @@ footer{
    padding-left: 0.5vw;
 
 }
-
+#container p{
+    position: sticky;
+}
 
 
 
 @media (width <600px) {
     
- 
+    *{
+        font-size: 2vh;
+    }
+    
+    header h1{
+        font-size: 5vw;
+    }
+    header h2{
+        font-size: 4vw;
+    }
+    header ul{
+        list-style: none;
+    }
+    header ul li{
+        font-size: 2vh;
+    }
     
     
     #container {
@@ -68,7 +86,7 @@ footer{
         grid-template-columns: repeat(1,1fr) ;
         width: 97vw;
         float: left;
-        padding-top: 30vh;
+        padding-top: 32vh;
         background-color: antiquewhite;
     }
 
@@ -108,6 +126,7 @@ footer{
     #side_bar {
         border: 0.5px red;
         background-color: rgb(87, 106, 131);
+        float: right;
     }
   }
 
@@ -133,7 +152,7 @@ footer{
         grid-template-columns: repeat(12,1fr) ;
         width: 97vw;
         float: left;
-        padding-top: 30vh;
+        padding-top: 32vh;
 
         background-color: antiquewhite;
     }
