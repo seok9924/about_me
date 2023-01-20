@@ -58,7 +58,7 @@ st.write(
 )
 st.markdown(html,unsafe_allow_html=True)
 
-
-HtmlFile = open("./day5/index.html", 'r', encoding='utf-8')
+print(abs_path)
+HtmlFile = open("day5/index.html", 'r', encoding='utf-8')
 source_code = HtmlFile.read() 
 st.markdown(source_code,unsafe_allow_html=True)
