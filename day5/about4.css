@@ -1,5 +1,5 @@
 *{
-    font-size: 1.2vw;
+    font-size: 1.3vh;
 }
 
 
@@ -27,7 +27,7 @@ header ul{
     list-style: none;
 }
 header ul li{
-    font-size: 1vw;
+    font-size: 2vh;
 }
 footer{
     background-color: aqua;
