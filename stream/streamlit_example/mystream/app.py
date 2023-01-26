@@ -123,6 +123,9 @@ if(search==True) :
         k_data=k_data.astype('float64').copy()
         st.dataframe(k_data.head(5),width=1000)
         st.line_chart(k_data)
+        df=k_data
+        st.download_button('CSV 파일로 다운받기',conver_df(df), file_name=company+date_se[0].strftime('%Y/%m/%d')+'~'+date_se[1].strftime('%Y/%m/%d')+'.csv',mime='text/csv')
+        
         
     if country_choice=="USA" :
         st.write('야후 파이낸스 자료')
@@ -132,7 +135,8 @@ if(search==True) :
         st.dataframe(df.head(10),width=1000)
         st.write(df.dtypes)
         st.line_chart(df)
+        st.download_button('CSV 파일로 다운받기',conver_df(df), file_name=company+date_se[0].strftime('%Y/%m/%d')+'~'+date_se[1].strftime('%Y/%m/%d')+'.csv',mime='text/csv')
+
     
-    # st.download_button('CSV 파일로 다운받기',conver_df(df), file_name=company+date_se[0].strftime('%Y/%m/%d')+'~'+date_se[1].strftime('%Y/%m/%d')+'.csv',mime='text/csv')
     
 
