@@ -29,7 +29,7 @@ def get_stock_info(maket_type=None):
         marketType = "kosdaqMkt"    
     elif maket_type == None:         
         marketType = ""
-    url = "{0}?method={1}&marketType={2}".format(base_url, method, marketType)     
+    url = "{0}?method={1}&marketType={2}".format(base_url, method, marketType) 
     df = pd.read_html(url, header=0)[0]
     df['종목코드']= df['종목코드'].apply(lambda x: f"{x:06d}")     
     df = df[['회사명','종목코드']]
@@ -37,8 +37,9 @@ def get_stock_info(maket_type=None):
 
 def get_ticker_symbol(company_name, maket_type):     
     df = get_stock_info(maket_type)
-    code = df[df['회사명']==company_name]['종목코드'].values    
+    code = df[df['회사명']==company_name]['종목코드'].values  
     code = code[0]
+    
     if maket_type == 'kospi':   
         ticker_symbol = code +".KS"     
     elif maket_type == 'kosdaq':      
@@ -49,7 +50,7 @@ def get_ticker_symbol(company_name, maket_type):
 
 with st.sidebar:
     st.write("회사 이름과 입력 기간")
-    company = st.text_input('주식회사명', '삼성전자')
+    company = st.text_input('주식회사명', 'GS')
     
     market_choice = st.radio(
         "주식 시장을 고르세요",
@@ -83,20 +84,19 @@ abc=get_stock_info(market_choice)
 if(search==True) :
     st.write(company+'의 회사코드입니다')
     serial=get_ticker_symbol(company,market_choice)
-    st.write(serial[0])
-    st.write(date_se[0])
     date_range= date_se   
-    ticker_symbol = serial[0]     
+    ticker_symbol = serial[0]   
+    st.write(ticker_symbol)  
     ticker_data = yf.Ticker(ticker_symbol)
     start_p = date_range[0]               
     end_p = date_range[1] + datetime.timedelta(days=1) 
     df = ticker_data.history(start=start_p, end=end_p)
     df.index = df.index.date
+
     st.subheader(f"[{company}] 주가 데이터")
     st.dataframe(df.head(10))
     st.line_chart(df)
     st.download_button('CSV 파일로 다운받기',conver_df(df), file_name=company+date_se[0].strftime('%Y/%m/%d')+'~'+date_se[1].strftime('%Y/%m/%d')+'.csv',mime='text/csv')
-    
-    
+    search=False
     
 
