@@ -3,7 +3,6 @@ import datetime
 import time
 import pandas as pd
 import lxml
-from pykrx import stock
 import streamlit as st
 import pandas as pd
 import yfinance as yf
@@ -74,8 +73,10 @@ st.title("주식정보를 가져오는 웹앱")
 
        
 
-# checkmarket=False
-# abc=get_ticker_symbol(company,market_choice)
+checkmarket=False
+abc=get_stock_info(market_choice)
+
+
            
 
 
