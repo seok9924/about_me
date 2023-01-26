@@ -86,7 +86,7 @@ if(search==True) :
     st.write(serial[0])
     st.write(date_se[0])
     date_range= date_se   
-    ticker_symbol = serial     
+    ticker_symbol = serial[0]     
     ticker_data = yf.Ticker(ticker_symbol)
     start_p = date_range[0]               
     end_p = date_range[1] + datetime.timedelta(days=1) 
