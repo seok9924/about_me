@@ -10,11 +10,16 @@ if (a===id && b===pw){
 else{
 
     if(a===id||b==pw){
-        document.write('id 나 비번중 다시')
+        if(a===id){
+            document.write('비밀번호가 틀렸습니다')
+        }
+        else{
+            document.write('아이디가 틀렸습니다')
+        }
     }
     else{
         document.write('다틀림')
     }
 
   
-}
+};
