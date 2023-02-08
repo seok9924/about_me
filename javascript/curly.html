@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> 상품구매</h2>
+    <form name="frm4">
+    [품목]  <select name="'proudct">
+            <option value='3000' onclick="gwa()">새우깡</option>
+            <option value='3000' onclick="gwa()">바나나킥</option>
+            <option value='3000' onclick="gwa()">ㅇㅇ</option>
+
+
+        </select>
+        <input type='text' size="='10" name="price">
+    [수량]    <input type="text" size="4" name="gae">
+        <input type="button" value="확인" onclick="ok()">
+    </form>
+<script>
+    function gwa(){
+        frm4.price.value= frm4.proudct[frm4.product.selectedIndex].value;
+    }
+    function ok()
+    {
+        alert(frm4.gae.value+"개 주문하셨습니다 \n 지불 금액은",eval(frm4.price.value*frm4.gae.value)+'원 입니다')
+    }
+</script>
+
+</body>
+
+</html>

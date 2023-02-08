@@ -74,3 +74,10 @@ switch(a){
   default:
     console.log('몰루')
 }
+
+function add(a,b) {
+  console.log(a+b);
+}
+function add1(a,b){
+  return a+b;
+}

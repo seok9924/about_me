@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1. 숫자 세는 자리 <div>  -->
+    <div id="number"> <h1> 0 </h1></div>
+    <!-- 2. 누르면 하나씩 더해지는 자리: increase  -->
+    <div id="buttons">
+        <button id="increase" onclick="increase()">+</button>
+        <!-- 3. 누르면 하나씩 빠지는 자리 (0보다 작으면 더이상 작아지는 것을 불가) : decrease -->
+        <button id="decrease" onclick="decrease()">-</button>
+        <!-- 4. Reset 버튼 : reset  -->
+        <br>
+        <br>
+        <br>
+        <button id="reset" onclick="reset()">Reset</button>
+    </div>
+
+<script> 
+    const numobj = document.getElementById('number');
+    let numchage=numobj.innerText;
+    function increase() {
+        numchage=parseInt(numchage)+1;
+        numobj.innerText=numchage;
+
+    }
+
+    function decrease() {
+        if (numchage>0){
+            numchage=parseInt(numchage)-1;
+            numobj.innerText=numchage;
+        }
+    }
+
+    function reset() {
+        numchage=0;
+        numobj.innerText=numchage;
+
+    }
+
+</script>
+</body>
+</html>
